@@ -4,3 +4,5 @@ build:
 test:
 	echo Test Placeholder
 	false
+clean:
+	rm fib.o fib
