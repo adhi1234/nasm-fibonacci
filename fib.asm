@@ -3,7 +3,7 @@ BITS 64
 EXTERN printf
 
 SECTION .data
-	printdigit DB "%d ",10,0
+	printdigit DB "%llu ",10,0
 
 SECTION .text
 	GLOBAL main
@@ -51,7 +51,7 @@ main_loop:
 	mov 	rcx, qword [ rbp - 0x20 ]	; retrieve the counter from stack frame
 	add	rcx, 1				; increment it
 	mov 	qword [ rbp - 0x20 ], rcx	; save it back to the stack frame
-	cmp	rcx, 20				; loop at most 20 times
+	cmp	rcx, 90				; loop at most 90 times
 	jl main_loop
 
 
