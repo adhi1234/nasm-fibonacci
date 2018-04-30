@@ -15,11 +15,11 @@ main:
 
 	; set up stack frame with some initial variables.
 	; int a = qword [ rbp - 0x08 ]
-	mov	qword [ rbp - 0x08 ], 1
+	mov	qword [ rbp - 0x08 ], 0
 	; int b = qword [ rbp - 0x10 ]
 	mov	qword [ rbp - 0x10 ], 1
 	; int c = qword [ rbp - 0x18 ]
-	mov	qword [ rbp - 0x18 ], 1
+	mov	qword [ rbp - 0x18 ], 0
 	; int counter = qword [ rbp - 0x20 ]
 	mov	qword [ rbp - 0x20 ], 1
 	
